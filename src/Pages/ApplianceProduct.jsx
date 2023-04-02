@@ -216,7 +216,6 @@ export default function ApplianceProduct({ setCartDisplay }) {
                   >
                     Add to Cart
                   </button>
-                  <button className="button_container_buy">Buy Now</button>
                 </div>
               </div>
             </div>

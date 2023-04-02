@@ -403,7 +403,8 @@
   transform-origin: center center;
 
   @media (max-width: 1000px) {
-    position: inherit;
+    position: fixed;
+    left: 58%;
   }
 }
 

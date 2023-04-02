@@ -428,7 +428,8 @@ body {
 }
 @media (max-width: 1000px) {
   .cartIcon {
-    position: inherit;
+    position: fixed;
+    left: 58%;
   }
 }
 
