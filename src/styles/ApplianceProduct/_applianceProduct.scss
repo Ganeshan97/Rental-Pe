@@ -1,5 +1,9 @@
 @use "../Global/general" as *;
 
+.product_page {
+  overflow: hidden;
+}
+
 .product_page_container {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
