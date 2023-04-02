@@ -1,0 +1,74 @@
+@use "../Global/general" as *;
+
+.hero-pages {
+  width: 100%;
+  height: 30rem;
+  background-image: url("/src/Assets/hero-bg.png");
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: inherit;
+  position: relative;
+
+  &__overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+    position: relative;
+    width: 100%;
+    height: 41rem;
+    justify-content: center;
+    color: $text-black;
+
+    h3 {
+      font-size: 3.6rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: $p-size;
+      font-weight: 600;
+
+      a {
+        color: $text-black;
+        text-decoration: none;
+        transition: all 0.2s;
+
+        &:hover {
+          color: $text-brown;
+        }
+      }
+    }
+  }
+}
+
+.furniture_page {
+  margin: 5rem 0;
+
+  &_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 3rem;
+
+    @media (max-width: 900px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 470px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &_card {
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    width: 35rem;
+  }
+}

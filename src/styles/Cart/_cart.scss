@@ -1,0 +1,92 @@
+@use "../Global/general" as *;
+
+.cart {
+  &_page {
+    padding: 1.5rem 1rem 2rem 1rem;
+  }
+
+  &_card {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr;
+    column-gap: 2rem;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+
+    @media (max-width: 1000px) {
+      grid-template-columns: 1fr;
+      row-gap: 2rem;
+    }
+
+    &_img {
+      width: 25rem;
+      height: 25rem;
+      border: 5px solid $text-brown;
+      border-radius: 5px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &_desc {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      h1 {
+        font-size: 2rem;
+        font-weight: 500;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+      }
+
+      .quantity {
+        font-size: 1.5rem;
+      }
+    }
+
+    &_price {
+      font-size: 2rem;
+      font-weight: 500;
+    }
+  }
+
+  &_btn_buy_now {
+    display: inline-block;
+    background-color: $text-brown;
+    padding: 1rem 1.5rem;
+    border-radius: 0.3rem;
+    transition: all 0.3s;
+    border: 2px solid $text-brown;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-left: 13rem;
+    z-index: 11;
+    position: relative;
+
+    @media (max-width: 1000px) {
+      margin-left: 5rem;
+    }
+
+    a {
+      cursor: pointer;
+    }
+
+    .buy_now {
+      color: white;
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+  }
+}
