@@ -339,6 +339,11 @@ body {
 .register-done i {
   cursor: pointer;
 }
+@media (max-width: 800px) {
+  .register-done {
+    z-index: 10000000;
+  }
+}
 
 .signIn-modal {
   opacity: 0;

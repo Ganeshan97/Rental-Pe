@@ -64,7 +64,7 @@ export default function Appliances() {
           shouldResetAutoplay
           showDots={false}
           sliderClass=""
-          slidesToSlide={2}
+          slidesToSlide={1}
           swipeable
         >
           {FurnitureData.map((card, index) => (

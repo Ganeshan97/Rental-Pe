@@ -311,6 +311,10 @@
   i {
     cursor: pointer;
   }
+
+  @media (max-width: 800px) {
+    z-index: 10000000;
+  }
 }
 
 .signIn-modal {
