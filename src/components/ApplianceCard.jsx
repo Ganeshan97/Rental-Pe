@@ -44,7 +44,7 @@ export default function ApplianceCard() {
             },
             mobile: {
               breakpoint: {
-                max: 464,
+                max: 600,
                 min: 0,
               },
               items: 1,
@@ -53,7 +53,7 @@ export default function ApplianceCard() {
             tablet: {
               breakpoint: {
                 max: 1024,
-                min: 464,
+                min: 600,
               },
               items: 2,
               partialVisibilityGutter: 30,

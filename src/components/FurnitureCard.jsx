@@ -43,7 +43,7 @@ export default function Appliances() {
             },
             mobile: {
               breakpoint: {
-                max: 464,
+                max: 600,
                 min: 0,
               },
               items: 1,
@@ -52,7 +52,7 @@ export default function Appliances() {
             tablet: {
               breakpoint: {
                 max: 1024,
-                min: 464,
+                min: 600,
               },
               items: 2,
               partialVisibilityGutter: 30,
